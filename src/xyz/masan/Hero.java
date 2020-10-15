@@ -3,6 +3,12 @@ package xyz.masan;
 public class Hero {
     String name;
     int hp;
+    Sword sword;
+
+    void attack(){
+        System.out.println(this.name + " attacled");
+        System.out.println("damaged 5 point to the enamy.");
+    }
 
     void sleep(){
         this.hp = 100;

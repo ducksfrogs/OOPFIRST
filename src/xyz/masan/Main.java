@@ -2,23 +2,24 @@ package xyz.masan;
 
 public class Main {
     public static void main(String[] args) {
+
         Hero h = new Hero();
         h.name = "Minato";
         h.hp = 100;
 
-        Matango m1 = new Matango();
-        m1.hp = 50;
-        m1.suffix = 'A';
+        Hero h2 = new Hero();
+        h2.name = "momoko"
+                ;
+        h2.hp = 23;
 
-        Matango m2 = new Matango();
-        m2.hp = 48;
-        m2.suffix = 'B';
+        Wizard w = new Wizard();
+        w.hp = 50;
+        w.heal(h);
+        w.heal(h2);
+        w.heal(h2);
+        System.out.println(h.hp);
+        System.out.println(h2.hp);
 
-        System.out.println("Breave " + h.name + " boarn");
-
-        h.slip();
-        m1.run();
-        m2.run();
 
     }
 }
